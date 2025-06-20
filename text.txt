@@ -1,0 +1,28 @@
+import random
+import time
+
+toaster_lines = [
+    "Hey Duck, want some toast?",
+    "I’m feeling a bit crumby today.",
+    "Ever tried toasting bread underwater?",
+    "I’m the hottest thing in the kitchen!",
+    "You quack me up!"
+]
+
+duck_lines = [
+    "Only if you promise not to burn me!",
+    "I’m just here to make a splash.",
+    "Toasting bread? Sounds a bit fishy.",
+    "You’re on fire, Toaster!",
+    "Quack! What’s cooking?"
+]
+
+def zany_chat():
+    for _ in range(5):
+        print("Toaster:", random.choice(toaster_lines))
+        time.sleep(1.5)
+        print("Duck:", random.choice(duck_lines))
+        time.sleep(1.5)
+    print("\nThe End of the zany kitchen chat!")
+
+zany_chat()
